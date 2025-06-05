@@ -1,0 +1,52 @@
+.section__Navbar{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    
+}
+.logo__image{
+    width: 50%;
+}
+.Navbar__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+}
+.Navbar__Allmenu{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 50px;
+}
+.Navbar__contacts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-self: end;
+    background-image: url("../../images//Nav\ Banner.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    
+}
+.Navbar__menu{
+    font-family: var(--main-font);
+    font-size: var(--normal-font-size);
+    text-decoration: none;
+    color: var(--title-color);
+}
+.text__menu__red{
+    font-family: var(--main-font);
+    font-size: var(--normal-font-size);
+    text-decoration: none;
+    color: var(--title-red-color);
+}
+.Navbar__contactdetails{
+    font-family: var(--main-font);
+    font-size: var(--tiny-font-size);
+    text-decoration: none;
+    color: var(--title-color);
+    
+}
