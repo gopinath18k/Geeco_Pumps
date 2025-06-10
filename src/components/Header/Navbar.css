@@ -1,7 +1,11 @@
+.Navbar{
+    padding: 0px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
 .section__Navbar{
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding-top: 10px;
     
 }
 .logo__image{
@@ -10,7 +14,7 @@
 .Navbar__container{
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content:center;
     gap: 10px;
 }
 .Navbar__Allmenu{
@@ -18,7 +22,12 @@
     align-items: center;
     justify-content: end;
     gap: 50px;
+    padding-right: 10px;
 }
+.Nav_Home,.Nav_About_Us,.Nav_All_Pumps,.Nav_Pump_Selection_Tool,.Nav_Warranty_Registration{
+    text-decoration: none;
+}
+
 .Navbar__contacts{
     display: flex;
     flex-direction: row;
@@ -29,6 +38,8 @@
     background-repeat:no-repeat;
     background-position:center;
     background-size: cover;
+    padding-left: 20px;
+    
     
 }
 .Navbar__menu{
@@ -43,10 +54,13 @@
     text-decoration: none;
     color: var(--title-red-color);
 }
-.Navbar__contactdetails{
+.Navbar__contactNumberdetails,.Navbar__contactMaildetails{
     font-family: var(--main-font);
     font-size: var(--tiny-font-size);
     text-decoration: none;
     color: var(--title-color);
     
+}
+.Navbar_callIcon,.Navbar_MailIcon{
+    margin-right: 10px;
 }
