@@ -59,8 +59,70 @@
     font-size: var(--tiny-font-size);
     text-decoration: none;
     color: var(--title-color);
-    
 }
 .Navbar_callIcon,.Navbar_MailIcon{
     margin-right: 10px;
+}
+.Navbar__Mobilemenu{
+    display: none;
+}
+
+.Navbar__MobileMenu.active{
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    margin-top: 10px;
+    height: 70vh;
+}
+
+
+@media only screen and (max-width: 768px){
+    .Navbar__Mobile{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    }
+    .Nav_Menus{
+        display: none;
+    }
+    .Nav__Mobile__Icons{
+        font-size: 40px;
+    }
+    .section__Navbar{
+    padding: 10px;
+    }
+    .logo__image{
+    width: 35%;
+}
+}
+@media screen and (max-width:425px) {
+    .Navbar__Mobile{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    }
+    .Nav__Mobile__Icons{
+        font-size: 35px;
+    }
+    .logo__image{
+        width: 50%;
+    }
+    .Navbar__MobileMenu{
+        display: none;
+    }
+    .Navbar__AllMobilemenu{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-evenly;
+
+    }
+    .Nav_Mobile_Home,.Nav_Mobile_About_Us,
+    .Nav_Mobile_Pumps,.Nav_Mobile_Pump_Selection_Tool,
+    .Nav_Mobile_Warranty_Registration{
+        font-family: var(--main-font);
+        font-size: var(--normal-font-size);
+        text-decoration: none;
+        color: var(--title-color);
+    }
 }
