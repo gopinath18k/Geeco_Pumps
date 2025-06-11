@@ -63,7 +63,10 @@
 .Navbar_callIcon,.Navbar_MailIcon{
     margin-right: 10px;
 }
-.Navbar__Mobilemenu{
+.Navbar__Mobile{
+    display: none;
+}
+.Navbar__MobileMenu{
     display: none;
 }
 
@@ -92,8 +95,26 @@
     padding: 10px;
     }
     .logo__image{
-    width: 35%;
-}
+        width: 50%;
+    }
+    .Navbar__MobileMenu{
+        display: none;
+    }
+    .Navbar__AllMobilemenu{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-evenly;
+
+    }
+    .Nav_Mobile_Home,.Nav_Mobile_About_Us,
+    .Nav_Mobile_Pumps,.Nav_Mobile_Pump_Selection_Tool,
+    .Nav_Mobile_Warranty_Registration{
+        font-family: var(--main-font);
+        font-size: var(--normal-font-size);
+        text-decoration: none;
+        color: var(--title-color);
+    }
 }
 @media screen and (max-width:425px) {
     .Navbar__Mobile{

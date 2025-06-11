@@ -19,6 +19,7 @@ function App() {
         <Route path='/all-pumps' element={<Allpumps/>}></Route>
         <Route path='/pump-selection-tool' element={<PumpSelectionTool/>}></Route>
         <Route path='/warranty-registration' element={<WarrantyRegistration/>}></Route>
+        
       </Routes>
     </BrowserRouter>
   );

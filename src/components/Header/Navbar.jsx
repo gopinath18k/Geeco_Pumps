@@ -25,8 +25,6 @@ export const Navbar = () => {
             </div>
             <div onClick={handleClickMenu} className="Navbar__Mobile col-6 col-sm-6">
                 {menuopen?<IoCloseOutline className='Nav__Mobile__Icons'/>:<RxHamburgerMenu className='Nav__Mobile__Icons'/>}
-                
-                
             </div>
             <div className="Navbar__container Nav_Menus col-10 col-lg-10">
                 <div className="Navbar__Allmenu">
@@ -50,7 +48,7 @@ export const Navbar = () => {
         </div>
         <div className={menuopen ? "Navbar__MobileMenu active":"Navbar__MobileMenu"}>
             <div className="Navbar__AllMobilemenu">
-                    <Link to="/" className="Nav_Mobile_Home">Home</Link>
+                    <Link onClick={closeMenu} to="/" className="Nav_Mobile_Home">Home</Link>
                     <Link to="/about-us" className="Nav_Mobile_About_Us">About Us</Link>
                     <Link to="/all-pumps" className="Nav_Mobile_Pumps">All Pumps</Link>
                     <Link to="/pump-selection-tool" className="Nav_Mobile_Pump_Selection_Tool">Pump Selection Tool</Link>
